@@ -1,0 +1,9 @@
+[Unit]
+Description=legion spacebar debouncing daemon
+
+[Service]
+Type=notify
+ExecStart=/usr/local/bin/legion-spacebar-debounce.py
+
+[Install]
+WantedBy=multi-user.target
