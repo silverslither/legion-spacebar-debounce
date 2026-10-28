@@ -8,4 +8,4 @@ Hacky evdev script to prevent extraneous spacebar KEYDOWN events emitted by Legi
 
 Depends on Python 3.10+ (you may modify the script to run on earlier versions, I'm not supporting it), and the `evdev` package.
 
-Install the python script in `/usr/local/bin`, and install the given systemd unit. If any other key remapping daemon is active (such as keyd), add `legion-spacebar-debounce.service` to that daemon's Requires and After using an override.
+Install the Python script in `/usr/local/bin`, and install the given systemd unit. If any other key remapping daemon is active (such as keyd), add `legion-spacebar-debounce.service` to that daemon's `Requires` and `After` using an override.
